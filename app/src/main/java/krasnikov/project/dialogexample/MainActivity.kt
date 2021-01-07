@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.btnShowBottomSheetDF.setOnClickListener {
-
+            showBottomSheetDialogFragment()
         }
 
     }
@@ -65,6 +65,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showDialogFragment() {
-        MyDialogFragment().show(supportFragmentManager, "TAG")
+        MyDialogFragment().show(supportFragmentManager, "MyDialogFragment")
+    }
+
+    private fun showBottomSheetDialogFragment() {
+        MyBottomSheetDialogFragment().show(
+            supportFragmentManager,
+            "MyBottomSheetDialogFragment"
+        )
     }
 }

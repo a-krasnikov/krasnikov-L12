@@ -9,5 +9,6 @@
     <string name="title_alert_dialog">AlertDialog</string>
     <string name="btn_ok">Ok</string>
     <string name="title_dialog_fragment">I am DialogFragment</string>
+    <string name="title_bottom_sheet_dialog_fragment">I am BottomSheetDialogFragment</string>
 
 </resources>
