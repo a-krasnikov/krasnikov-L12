@@ -1,10 +1,11 @@
 package krasnikov.project.dialogexample
 
 import android.os.Bundle
+import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import krasnikov.project.dialogexample.databinding.ActivityMainBinding
-
 
 class MainActivity : AppCompatActivity() {
 
@@ -32,7 +33,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupListeners() {
         binding.btnShowAlert.setOnClickListener {
-
+            showAlertDialog()
         }
 
         binding.btnShowDialog.setOnClickListener {
@@ -53,5 +54,13 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupBottomSheet() {
         bottomSheetBehavior.state = BottomSheetBehavior.STATE_HIDDEN
+    }
+
+    private fun showAlertDialog() {
+        AlertDialog.Builder(this).setTitle(R.string.title_alert_dialog)
+            .setMessage(R.string.msg_alert_dialog)
+            .setPositiveButton(R.string.btn_ok) { _, _ ->
+                Toast.makeText(this, "Ok", Toast.LENGTH_SHORT).show()
+            }.create().show()
     }
 }
