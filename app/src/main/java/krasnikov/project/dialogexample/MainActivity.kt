@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.btnShowDialog.setOnClickListener {
-
+            showDialogFragment()
         }
 
         binding.btnShowBottomSheetXml.setOnClickListener {
@@ -62,5 +62,9 @@ class MainActivity : AppCompatActivity() {
             .setPositiveButton(R.string.btn_ok) { _, _ ->
                 Toast.makeText(this, "Ok", Toast.LENGTH_SHORT).show()
             }.create().show()
+    }
+
+    private fun showDialogFragment() {
+        MyDialogFragment().show(supportFragmentManager, "TAG")
     }
 }

@@ -4,8 +4,10 @@
     <string name="dialog_fragment">Dialog Fragment</string>
     <string name="bottom_sheet">Bottom Sheet</string>
     <string name="bottom_sheet_dialog_fragment">Bottom Sheet Dialog Fragment</string>
-    <string name="bottom_sheet_title">I am BottomSheet</string>
+    <string name="title_bottom_sheet">I am BottomSheet</string>
     <string name="msg_alert_dialog">I am AlertDialog</string>
     <string name="title_alert_dialog">AlertDialog</string>
     <string name="btn_ok">Ok</string>
+    <string name="title_dialog_fragment">I am DialogFragment</string>
+
 </resources>
