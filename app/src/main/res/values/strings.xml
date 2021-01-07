@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Dialog Example</string>
+    <string name="alert_dialog">Alert Dialog</string>
+    <string name="dialog_fragment">Dialog Fragment</string>
+    <string name="bottom_sheet">Bottom Sheet</string>
+    <string name="bottom_sheet_dialog_fragment">Bottom Sheet Dialog Fragment</string>
+    <string name="bottom_sheet_title">I am BottomSheet</string>
+</resources>
