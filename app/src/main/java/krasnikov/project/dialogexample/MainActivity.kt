@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
         AlertDialog.Builder(this).setTitle(R.string.title_alert_dialog)
             .setMessage(R.string.msg_alert_dialog)
             .setPositiveButton(R.string.btn_ok) { _, _ ->
-                Toast.makeText(this, "Ok", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Ok clicked", Toast.LENGTH_SHORT).show()
             }.create().show()
     }
 
